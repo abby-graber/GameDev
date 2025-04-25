@@ -1784,6 +1784,7 @@ MonoBehaviour:
   jumpForce: 10
   fallMultiplier: 2.5
   ascendMultiplier: 2
+  jumpSound: {fileID: 8300000, guid: f0027466a11c1465bb3edecf0018cc3a, type: 3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8

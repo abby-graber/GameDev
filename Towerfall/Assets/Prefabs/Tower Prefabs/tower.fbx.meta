@@ -3,7 +3,62 @@ guid: 1812894d847754787959707d59b9d78d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bricks (Red, Worn)
+    second: {fileID: 2100000, guid: 561e51eb20343ed46b7af559edb94857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CONCRET DIRT GREEN
+    second: {fileID: 2100000, guid: ffa9f731b331c2e40a2d09ecab6118c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emerald Gemstone
+    second: {fileID: 2100000, guid: 2ed5ac5bee18ffe4396d871af249a6b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fenster
+    second: {fileID: 2100000, guid: 0235b0cc38a956e4fba56ec6f85768a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holz
+    second: {fileID: 2100000, guid: 5ebc2312b1266f84e95742a7912a8948, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 5ebc2312b1266f84e95742a7912a8948, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stylized Quirky Wall
+    second: {fileID: 2100000, guid: dd2d58f7c65a4a942936247c6cd0a55b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: insite the tower
+    second: {fileID: 2100000, guid: 6e1bbb4b3d70f476aa62d1a8b37274b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schindeln
+    second: {fileID: 2100000, guid: 2ed5ac5bee18ffe4396d871af249a6b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terracotta
+    second: {fileID: 2100000, guid: 42f8049b0aa7e56428eacc14875ba421, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terracotta.001
+    second: {fileID: 2100000, guid: dd2d58f7c65a4a942936247c6cd0a55b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

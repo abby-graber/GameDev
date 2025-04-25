@@ -21,6 +21,8 @@ public class MovementController : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float fallMultiplier = 2.5f; 
     [SerializeField] private float ascendMultiplier = 2f;
+
+    [SerializeField] private AudioClip jumpSound;
     
     private bool isGrounded = true;
     [SerializeField] private LayerMask groundLayer;
@@ -165,6 +167,7 @@ public class MovementController : MonoBehaviour
         groundCheckTimer = groundCheckDelay;
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
         animator.SetTrigger("jumpTrigger");
+        SoundFXManager.instance.PlaySoundFXClip(jumpSound, transform, 1f);
     }
 
     void ApplyJumpPhysics()
