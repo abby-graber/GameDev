@@ -1,10 +1,13 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class MovementController : MonoBehaviour
 {
     [SerializeField] private Transform cameraTransform; // Assign your Main Camera's transform in the Inspector
+
+    [SerializeField] private ManaBar manaBar;
     private Animator animator;
 
+    
     // Ground Movement
     private Rigidbody rb;
     [SerializeField] private float walkSpeed = 5f;
@@ -21,14 +24,30 @@ public class MovementController : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float fallMultiplier = 2.5f; 
     [SerializeField] private float ascendMultiplier = 2f;
-    
+
+    [SerializeField] private float slowFallMultiplier = .5f; 
+    [SerializeField] private float slowFallMaxSpeed = -3f;
+
+ 
+
     private bool isGrounded = true;
     [SerializeField] private LayerMask groundLayer;
     private float groundCheckTimer = 0f;
     private float groundCheckDelay = 0.3f;
     private float playerHeight;
     private float raycastDistance;
+    [Header("Dash Settings")]
+    [SerializeField] private float dashForce = 15f;
+    [SerializeField] private float dashDuration = 0.2f;
+    [SerializeField] private float dashCooldown = 1.5f;
+    private bool usedDoubleJump;
 
+    private bool isSlowFalling;
+    private bool canDash = true;
+    private bool isDashing = false;
+    InputAction spell1;
+    InputAction spell2;
+    InputAction reset;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -42,6 +61,10 @@ public class MovementController : MonoBehaviour
         // Hides the mouse
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        
+        spell1 = InputSystem.actions.FindAction("Spell1(Q)");
+        spell2 = InputSystem.actions.FindAction("Spell2(E)");
+        reset = InputSystem.actions.FindAction("Reset");
     }
 
     void Update()
@@ -58,11 +81,24 @@ public class MovementController : MonoBehaviour
 
         // Jump
         if (Input.GetButtonDown("Jump") && isGrounded)
-        {
+        {   
             Jump();
+            //ManaBar.Instance.UseMana(5.0f);
         }
-
-        // Ground Check
+        if (spell1.WasPerformedThisFrame())
+        {
+            SecondJump();
+            ManaBar.Instance.UseMana(5.0f);
+        }
+        if (spell2.IsPressed()){
+            ManaBar.Instance.UseMana(0.1f);
+            ApplySlowFall();
+        }
+        if (reset.IsPressed()){
+            ManaBar.Instance.AddMana(100.0f);
+        
+        }
+        // Ground Check 
         if (!isGrounded && groundCheckTimer <= 0f)
         {
             Vector3 rayOrigin = transform.position + Vector3.up * 0.1f;
@@ -74,11 +110,14 @@ public class MovementController : MonoBehaviour
             }
 
             animator.SetBool("inAir", !isGrounded);
+            usedDoubleJump = false;
         }
         else
         {
             groundCheckTimer -= Time.deltaTime;
         }
+
+        
     }
 
     void FixedUpdate()
@@ -106,6 +145,8 @@ public class MovementController : MonoBehaviour
         MovePlayer();
 
         ApplyJumpPhysics();
+
+        
     }
 
     void MovePlayer()
@@ -158,7 +199,28 @@ public class MovementController : MonoBehaviour
             );
         }
     }
-
+    private void ApplySlowFall()
+    {
+        // Only apply slow fall when falling
+        if (!isGrounded && rb.linearVelocity.y < 0)
+        {
+    
+            // Apply reduced gravity scale while falling and button is held
+            rb.AddForce(Physics.gravity * rb.mass * (slowFallMultiplier - 1f), ForceMode.Acceleration);
+            
+            // Ensure we don't fall faster than our slow fall max speed
+            if (rb.linearVelocity.y < slowFallMaxSpeed)
+            {
+                Vector3 velocity = rb.linearVelocity;
+                velocity.y = slowFallMaxSpeed;
+                rb.linearVelocity = velocity;
+            }
+        
+            
+            
+        
+        }
+    }
     void Jump()
     {
         isGrounded = false;
@@ -166,7 +228,15 @@ public class MovementController : MonoBehaviour
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
         animator.SetTrigger("jumpTrigger");
     }
-
+    private void SecondJump()
+    {
+        
+        if (!(usedDoubleJump)) // Does not work with usedDouble Jump, Dont know Why
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            usedDoubleJump = true;
+        }
+    }
     void ApplyJumpPhysics()
     {
         // If using linearVelocity, keep it consistent. Otherwise use rb.velocity if you prefer.

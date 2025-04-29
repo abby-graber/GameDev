@@ -3,7 +3,32 @@ guid: 1812894d847754787959707d59b9d78d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bricks (Red, Worn)
+    second: {fileID: 2100000, guid: 312f9ebc7510c5146b9a0f3840d20411, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fenster
+    second: {fileID: 2100000, guid: 5ebc2312b1266f84e95742a7912a8948, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holz
+    second: {fileID: 2100000, guid: 5ebc2312b1266f84e95742a7912a8948, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 5ebc2312b1266f84e95742a7912a8948, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stylized Quirky Wall
+    second: {fileID: 2100000, guid: 5ebc2312b1266f84e95742a7912a8948, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
