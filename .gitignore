@@ -9,6 +9,12 @@ Temp/
 obj/
 UserSettings/
 
+Towerfall/Library/
+Towerfall/Logs/
+Towerfall/Temp/
+Towerfall/obj/
+Towerfall/UserSettings/
+
 # Ignore Build folders (generated game builds)
 Build/
 Builds/
