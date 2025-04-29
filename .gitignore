@@ -9,11 +9,11 @@ Temp/
 obj/
 UserSettings/
 
-Towerfall/Library/
-Towerfall/Logs/
-Towerfall/Temp/
-Towerfall/obj/
-Towerfall/UserSettings/
+/Towerfall/Library/
+/Towerfall/Logs/
+/Towerfall/Temp/
+/Towerfall/obj/
+/Towerfall/UserSettings/
 
 # Ignore Build folders (generated game builds)
 Build/
@@ -42,9 +42,9 @@ Library/ShaderCache/
 Library/GICache/
 Library/Artifacts/
 
-Towerfall/Library/ShaderCache/
-Towerfall/Library/GICache/
-Towerfall/Library/Artifacts/
+/Towerfall/Library/ShaderCache/
+/Towerfall/Library/GICache/
+/Towerfall/Library/Artifacts/
 # Ignore local cache files
 *.tmp
 *.bak
