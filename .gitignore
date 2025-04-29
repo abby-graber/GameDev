@@ -3,13 +3,13 @@
 Thumbs.db
 
 # Ignore Unity auto-generated folders
-Library/
+[Ll]ibrary/
 Logs/
 Temp/
 obj/
 UserSettings/
 
-/Towerfall/Library/
+/Towerfall/[Ll]ibrary/
 /Towerfall/Logs/
 /Towerfall/Temp/
 /Towerfall/obj/
