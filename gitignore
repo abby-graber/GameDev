@@ -4,6 +4,7 @@ Thumbs.db
 
 # Ignore Unity auto-generated folders
 Library/
+Library/Artifacts
 Logs/
 Temp/
 obj/
