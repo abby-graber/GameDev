@@ -42,6 +42,9 @@ Library/ShaderCache/
 Library/GICache/
 Library/Artifacts/
 
+Towerfall/Library/ShaderCache/
+Towerfall/Library/GICache/
+Towerfall/Library/Artifacts/
 # Ignore local cache files
 *.tmp
 *.bak
