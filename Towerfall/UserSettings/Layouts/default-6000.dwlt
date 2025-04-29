@@ -40,9 +40,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 391
     width: 1222
     height: 550
+=======
+    y: 458
+    width: 821.5
+    height: 521
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 13}
@@ -74,7 +80,11 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 127
+=======
+  controlID: 150
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -172,7 +182,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 126
+=======
+  controlID: 55
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -198,7 +212,11 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 18
+=======
+  controlID: 56
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -445,9 +463,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 14380100
       m_LastClickedID: 79892
       m_ExpandedIDs: 0ac3fdff3efbfdff9cfefdff3207feff884dfeff484ffeff2254feff9e5ffeff8c64feff90b3feffc2cdfefffafaffff
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 12ccffff3ef3ffff2afbffffda810000
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Floor
@@ -464,7 +488,7 @@ MonoBehaviour:
         m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -519,7 +543,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scripts
+=======
+    - Assets/Prefabs/Platform Prefabs
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -529,16 +557,26 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scripts
+=======
+  - Assets/Prefabs/Platform Prefabs
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\User123\GameDev\Towerfall
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: e0920000
     m_LastClickedID: 37600
     m_ExpandedIDs: 00000000fe91000000920000029200000492000006920000089200000a9200000c9200000e92000010920000129200001492000016920000189200001a9200001c9200001e92000020920000229200002492000026920000289200002a9200002c9200002e92000030920000329200003492000036920000389200003a9200003c9200003e920000429200004492000046920000c49200004094000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 70870000
+    m_LastClickedID: 34672
+    m_ExpandedIDs: 00000000d2860000d4860000d6860000d8860000da860000dc860000de860000e0860000e2860000e4860000e6860000e8860000ea86000000ca9a3b
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,7 +605,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000fe91000000920000029200000492000006920000089200000a9200000c9200000e92000010920000129200001492000016920000189200001a9200001c9200001e92000020920000229200002492000026920000289200002a9200002c9200002e92000030920000329200003492000036920000389200003a9200003c9200003e9200004092000042920000449200004692000048920000
+=======
+    m_ExpandedIDs: 00000000d2860000d4860000d6860000d8860000da860000dc860000de860000e0860000e2860000e4860000e6860000e8860000ea860000
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -624,7 +666,11 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
+<<<<<<< HEAD
   m_DirectoriesAreaWidth: 199
+=======
+  m_DirectoriesAreaWidth: 230.5
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1134,9 +1180,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -70.68656, y: 11.703678, z: -86.89331}
     speed: 2
     m_Value: {x: -70.68656, y: 11.703678, z: -86.89331}
+=======
+    m_Target: {x: 177.24327, y: 126.791, z: 138.07982}
+    speed: 2
+    m_Value: {x: 177.24327, y: 126.791, z: 138.07982}
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1182,6 +1234,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.032736406, y: -0.95210373, z: 0.09182424, w: -0.29163003}
     speed: 2
     m_Value: {x: -0.032719184, y: -0.9516029, z: 0.09177594, w: -0.29147664}
@@ -1189,10 +1242,19 @@ MonoBehaviour:
     m_Target: 118.04619
     speed: 2
     m_Value: 118.04619
-  m_Ortho:
-    m_Target: 0
+=======
+    m_Target: {x: -0.2957777, y: 0.060995042, z: -0.018934073, w: -0.9531378}
     speed: 2
-    m_Value: 0
+    m_Value: {x: -0.29577252, y: 0.060993973, z: -0.018933741, w: -0.9531211}
+  m_Size:
+    m_Target: 61.416313
+    speed: 2
+    m_Value: 61.416313
+>>>>>>> 8a6c7adc9d9d85fcff28840e1c6c9cc177a58bd3
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 0.94331
     m_SpeedNormalized: 0.469
