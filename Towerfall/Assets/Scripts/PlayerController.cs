@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 public class MovementController : MonoBehaviour
 {
     [SerializeField] private Transform cameraTransform; // Assign your Main Camera's transform in the Inspector
@@ -18,6 +19,7 @@ public class MovementController : MonoBehaviour
 
     private float moveHorizontal;
     private float moveForward;
+    private Vector2 moveInput;
     [SerializeField] private float friction = 10.0f;
 
     // Jumping
@@ -29,7 +31,12 @@ public class MovementController : MonoBehaviour
     [SerializeField] private float slowFallMaxSpeed = -3f;
 
  
+    [Header("Mana Values")]
 
+    [SerializeField] private float dashCost = 2.0f;
+
+    [SerializeField] private float floatCost = -0.1f;
+    [SerializeField] private float doubleJumpCost = 5.0f;
     private bool isGrounded = true;
     [SerializeField] private LayerMask groundLayer;
     private float groundCheckTimer = 0f;
@@ -47,6 +54,7 @@ public class MovementController : MonoBehaviour
     private bool isDashing = false;
     InputAction spell1;
     InputAction spell2;
+    InputAction spell3;
     InputAction reset;
     void Start()
     {
@@ -64,6 +72,7 @@ public class MovementController : MonoBehaviour
         
         spell1 = InputSystem.actions.FindAction("Spell1(Q)");
         spell2 = InputSystem.actions.FindAction("Spell2(E)");
+        spell3 = InputSystem.actions.FindAction("Spell3(Z)");
         reset = InputSystem.actions.FindAction("Reset");
     }
 
@@ -88,11 +97,16 @@ public class MovementController : MonoBehaviour
         if (spell1.WasPerformedThisFrame())
         {
             SecondJump();
-            ManaBar.Instance.UseMana(5.0f);
+            ManaBar.Instance.UseMana(doubleJumpCost);
         }
         if (spell2.IsPressed()){
-            ManaBar.Instance.UseMana(0.1f);
+            ManaBar.Instance.UseMana(floatCost);
             ApplySlowFall();
+        } 
+        if (spell3.IsPressed()){
+            
+            
+            StartDash();
         }
         if (reset.IsPressed()){
             ManaBar.Instance.AddMana(100.0f);
@@ -199,6 +213,58 @@ public class MovementController : MonoBehaviour
             );
         }
     }
+
+   
+    private void StartDash()
+    {
+        if (canDash)
+        {   
+            ManaBar.Instance.UseMana(dashCost); 
+            StartCoroutine(DashCoroutine());
+        }
+    }
+
+    
+    private IEnumerator DashCoroutine()
+    {
+        // Set flags
+        canDash = false;
+        isDashing = true;
+        moveInput = new Vector2(moveHorizontal,moveForward);
+        // Store original gravity
+        float originalGravity = rb.useGravity ? 1 : 0;
+        rb.useGravity = false;
+        
+        // Get dash direction from movement input, or forward if no input
+        Vector3 dashDirection;
+        if (moveInput != Vector2.zero)
+        {
+            dashDirection = new Vector3(moveInput.x, 0, moveInput.y).normalized;
+        }
+        else
+        {
+            dashDirection = transform.forward;
+        }
+        
+        // Apply dash force
+        rb.linearVelocity = new Vector3(0, 0, 0); // Reset velocity
+        rb.AddForce(dashDirection * dashForce, ForceMode.Impulse);
+        
+        // Optional: Add visual effects
+        // Instantiate(dashEffect, transform.position, Quaternion.identity);
+        
+        // Wait for dash duration
+        yield return new WaitForSeconds(dashDuration);
+        
+        // End dash
+        isDashing = false;
+        rb.useGravity = originalGravity > 0;
+        
+        // Wait for cooldown
+        yield return new WaitForSeconds(dashCooldown - dashDuration);
+        canDash = true;
+    }
+    
     private void ApplySlowFall()
     {
         // Only apply slow fall when falling
@@ -206,7 +272,7 @@ public class MovementController : MonoBehaviour
         {
     
             // Apply reduced gravity scale while falling and button is held
-            rb.AddForce(Physics.gravity * rb.mass * (slowFallMultiplier - 1f), ForceMode.Acceleration);
+            rb.AddForce((slowFallMultiplier - 1f) * rb.mass * Physics.gravity, ForceMode.Acceleration);
             
             // Ensure we don't fall faster than our slow fall max speed
             if (rb.linearVelocity.y < slowFallMaxSpeed)
@@ -249,4 +315,5 @@ public class MovementController : MonoBehaviour
             rb.linearVelocity += Vector3.up * Physics.gravity.y * (ascendMultiplier - 1) * Time.fixedDeltaTime;
         }
     }
+    
 }

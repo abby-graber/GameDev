@@ -27,7 +27,10 @@ public class ManaBar : MonoBehaviour
         UpdateManaBar();
         
     }
-
+    public float ReturnMana()
+    {
+        return currentMana;
+    } 
     private void UpdateManaBar() {
 
         manabarFill.fillAmount = (currentMana / maxMana); 
