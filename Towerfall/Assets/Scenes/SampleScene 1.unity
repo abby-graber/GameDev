@@ -2285,8 +2285,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 622489447}
     - target: {fileID: 2894909703029762810, guid: b1863b50f7b2d4bb6aeadc21fea4832e, type: 3}
+      propertyPath: dashCost
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894909703029762810, guid: b1863b50f7b2d4bb6aeadc21fea4832e, type: 3}
       propertyPath: dashForce
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894909703029762810, guid: b1863b50f7b2d4bb6aeadc21fea4832e, type: 3}
+      propertyPath: floatCost
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894909703029762810, guid: b1863b50f7b2d4bb6aeadc21fea4832e, type: 3}
+      propertyPath: dashCooldown
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894909703029762810, guid: b1863b50f7b2d4bb6aeadc21fea4832e, type: 3}
+      propertyPath: doubleJumpCost
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2894909703029762810, guid: b1863b50f7b2d4bb6aeadc21fea4832e, type: 3}
       propertyPath: cameraTransform

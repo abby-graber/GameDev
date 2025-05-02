@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using System;
 public class MovementController : MonoBehaviour
 {
     [SerializeField] private Transform cameraTransform; // Assign your Main Camera's transform in the Inspector
@@ -105,6 +106,7 @@ public class MovementController : MonoBehaviour
         } 
         if (spell3.IsPressed()){
             
+            if (ManaBar.Instance.ReturnMana() < dashCost);
             
             StartDash();
         }
