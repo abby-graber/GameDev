@@ -9,6 +9,12 @@ Logs/
 Temp/
 obj/
 UserSettings/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
 
 # Ignore Build folders (generated game builds)
 Build/
@@ -22,6 +28,7 @@ Packages/packages-lock.json
 !Packages/manifest.json
 
 # Ignore Visual Studio/JetBrains IDE files
+.vs/
 .vscode/
 *.sln
 *.csproj
@@ -44,3 +51,5 @@ Library/Artifacts/
 *.lock
 *.log
 *.~*
+
+Towerfall/.vs

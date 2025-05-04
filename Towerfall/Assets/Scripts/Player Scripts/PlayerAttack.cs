@@ -3,11 +3,19 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public float attackRange = 1.5f;  // How far the attack reaches
-    public int attackDamage = 20;     // Damage per attack
+    public int attackDamage = 15;    // Damage per attack
     public float attackCooldown = 0.5f; // Time between attacks
     public LayerMask enemyLayer;      // Detects enemies
 
     private float lastAttackTime;
+    private Animator animator;
+    private PlayAudio playAudio;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+        playAudio = GetComponent<PlayAudio>();
+    }
 
     void Update()
     {
@@ -22,20 +30,30 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         // Play an attack animation (Optional, you can use an Animator if you have one)
-        // GetComponent<Animator>().SetTrigger("Attack");
+        animator.SetTrigger("attack");
+        playAudio.PlaySpell();
 
         // Check for enemies in attack range
         Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange, enemyLayer);
 
         foreach (Collider enemy in hitEnemies)
         {
-            if (enemy.TryGetComponent<BreakablePlatform>(out BreakablePlatform platform))
+            if (enemy.GetComponentInParent<BreakablePlatform>() is BreakablePlatform platform)
             {
-                platform.TakeDamage(attackDamage); // Inflicts damage on the enemy
+                Debug.Log("Hit enemy");
+                platform.TakeDamage(attackDamage);
+            }
+            if (enemy.GetComponentInParent<EnemyAI>() is EnemyAI health)
+            {
+                Debug.Log("Hit enemy");
+                health.TakeDamage(attackDamage);
             }
         }
+    }
 
-        Debug.Log("Player Attacked!");
+    public void Victory()
+    {
+        animator.SetTrigger("victory");
     }
 
     // Draw attack range in Scene view (for debugging)
