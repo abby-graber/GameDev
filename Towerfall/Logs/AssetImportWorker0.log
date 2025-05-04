@@ -1,29 +1,36 @@
+Unity Editor version:    6000.0.33f1 (433b0a79340b)
+Branch:                  6000.0/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.3.2 (Build 24D81)
+Darwin version:          24.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        65536 MB
 Using pre-set license
-Built from '6000.0/staging' branch; Version is '6000.0.33f1 (433b0a79340b) revision 4406026'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16302 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+Pro License: YES
 
 COMMAND LINE ARGUMENTS:
-D:\User123\6000.0.33f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/6000.0.33f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/User123/GameDev/Towerfall
+/Users/sunyyang/Documents/GitHub/GameDev/Towerfall
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56895
+58958
 -job-worker-count
-2
+4
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: C:/Users/User123/GameDev/Towerfall
-C:/Users/User123/GameDev/Towerfall
+Successfully changed project path to: /Users/sunyyang/Documents/GitHub/GameDev/Towerfall
+/Users/sunyyang/Documents/GitHub/GameDev/Towerfall
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,13 +66,13 @@ C:/Users/User123/GameDev/Towerfall
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9748]  Target information:
+Player connection [8529823808]  Target information:
 
-Player connection [9748]  * "[IP] 192.168.86.33 [Port] 0 [Flags] 2 [Guid] 1661531419 [EditorId] 1661531419 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-88JVA90) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8529823808]  * "[IP] 192.168.1.127 [Port] 0 [Flags] 2 [Guid] 548699180 [EditorId] 548699180 [Version] 1048832 [Id] OSXEditor(0,MacBookPro.attlocal.net) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [9748] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [9748] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 2
+Player connection [8529823808] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8529823808] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 4
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
 Library Redirect Path: Library/
@@ -75,59 +82,65 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.33f1 (433b0a79340b)
-[Subsystems] Discovering subsystems at path D:/User123/6000.0.33f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/User123/GameDev/Towerfall/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.33f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/sunyyang/Documents/GitHub/GameDev/Towerfall/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
-    Vendor:   NVIDIA
-    VRAM:     5966 MB
-    Driver:   32.0.15.6070
+ preferred device: Apple M1 Max (high power)
+Metal devices available: 1
+0: Apple M1 Max (high power)
+Using device Apple M1 Max (high power)
+Initializing Metal device caps: Apple M1 Max
 Initialize mono
-Mono path[0] = 'D:/User123/6000.0.33f1/Editor/Data/Managed'
-Mono path[1] = 'D:/User123/6000.0.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/User123/6000.0.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.33f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.33f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.0.33f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56207
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/User123/6000.0.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003267 seconds.
-- Loaded All Assemblies, in  0.465 seconds
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.33f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.33f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.33f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.001029 seconds.
+- Loaded All Assemblies, in  0.234 seconds
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.410 seconds
-Domain Reload Profiling: 875ms
-	BeginReloadAssembly (170ms)
+- Finished resetting the current domain, in  0.325 seconds
+Domain Reload Profiling: 560ms
+	BeginReloadAssembly (49ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (185ms)
-		LoadAssemblies (170ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (119ms)
+		LoadAssemblies (48ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (180ms)
-			TypeCache.Refresh (178ms)
-				TypeCache.ScanAssembly (163ms)
+		AnalyzeDomain (116ms)
+			TypeCache.Refresh (115ms)
+				TypeCache.ScanAssembly (105ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (411ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (325ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (368ms)
+		SetupLoadedEditorAssemblies (297ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (172ms)
-			ProcessInitializeOnLoadMethodAttributes (92ms)
+			InitializePlatformSupportModulesInManaged (100ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (97ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -136,208 +149,83 @@ Domain Reload Profiling: 875ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.888 seconds
-Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.398 seconds
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Native extension for iOS target not found
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.736 seconds
-Domain Reload Profiling: 1622ms
-	BeginReloadAssembly (252ms)
+- Finished resetting the current domain, in  0.455 seconds
+Domain Reload Profiling: 853ms
+	BeginReloadAssembly (79ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (521ms)
-		LoadAssemblies (413ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (259ms)
+		LoadAssemblies (140ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (271ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (182ms)
-			BuildScriptInfoCaches (62ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (737ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (120ms)
+				TypeCache.ScanAssembly (109ms)
+			BuildScriptInfoCaches (24ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (455ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (604ms)
+		SetupLoadedEditorAssemblies (381ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (99ms)
-			ProcessInitializeOnLoadAttributes (467ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (280ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/6000.0.33f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 66 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4078 unused Assets / (4.8 MB). Loaded Objects now: 4607.
-Memory consumption went from 178.7 MB to 173.9 MB.
-Total: 11.686300 ms (FindLiveObjects: 0.536800 ms CreateObjectMapping: 0.545100 ms MarkObjects: 6.779600 ms  DeleteObjects: 3.823700 ms)
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.737 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.714 seconds
-Domain Reload Profiling: 1451ms
-	BeginReloadAssembly (244ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (411ms)
-		LoadAssemblies (365ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (182ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (715ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (568ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (102ms)
-			ProcessInitializeOnLoadAttributes (423ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4076 unused Assets / (4.0 MB). Loaded Objects now: 4608.
-Memory consumption went from 167.4 MB to 163.3 MB.
-Total: 7.326500 ms (FindLiveObjects: 0.556300 ms CreateObjectMapping: 0.530400 ms MarkObjects: 4.183200 ms  DeleteObjects: 2.055400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 242731.237262 seconds.
-  path: Assets/Level3SFX/Level3SFX/Attack.mp3
-  artifactKey: Guid(c345e86fe0d2163499372cfb44a07d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Attack.mp3 using Guid(c345e86fe0d2163499372cfb44a07d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2320def191f706061f907e039b18b76e') in 0.1429641 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Unloading 67 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4079 unused Assets / (3.7 MB). Loaded Objects now: 4639.
+Memory consumption went from 118.5 MB to 114.8 MB.
+Total: 4.987416 ms (FindLiveObjects: 0.283916 ms CreateObjectMapping: 0.113292 ms MarkObjects: 3.496167 ms  DeleteObjects: 1.093416 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Level3SFX/Level3SFX/Roar1.mp3
-  artifactKey: Guid(02522e1a73e4afd4897f07c1a66041f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Roar1.mp3 using Guid(02522e1a73e4afd4897f07c1a66041f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0071cc828bd95e6a41a61202766fb108') in 0.0066885 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 2650176.013802 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(d7986e75c1c8749f5b407856921b15c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(d7986e75c1c8749f5b407856921b15c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77a8e0ff9fbb1ef44e344b1c29556a47') in 0.002081167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Level3SFX/Level3SFX/Death.mp3
-  artifactKey: Guid(edb271bce2f11e84fb9074cb8eb8fae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Death.mp3 using Guid(edb271bce2f11e84fb9074cb8eb8fae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1da01f45a1d454bba086fe6b8f7b1243') in 0.0121287 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 77.806894 seconds.
+  path: Assets/Prefabs/Tower Prefabs/tower.fbx
+  artifactKey: Guid(1812894d847754787959707d59b9d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower Prefabs/tower.fbx using Guid(1812894d847754787959707d59b9d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9c65217afefe910e5f404fed7394372') in 0.318098833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 141
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Level3SFX/Level3SFX/Idle.mp3
-  artifactKey: Guid(e52c29d9892b0f5488566d6ac77e72e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Idle.mp3 using Guid(e52c29d9892b0f5488566d6ac77e72e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ce60917099493d7080ad41e8ca63264') in 0.006421 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000046 seconds.
+  path: Assets/Prefabs/Tower Prefabs/tower prototype.prefab
+  artifactKey: Guid(7405f7348ab3d4ed9a4156e96db0aa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower Prefabs/tower prototype.prefab using Guid(7405f7348ab3d4ed9a4156e96db0aa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58182a40aa4f11209b961d8cf3badb65') in 0.005081208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Level3SFX/Level3SFX/Hurt2.mp3
-  artifactKey: Guid(de51913b9cc8865438de488c4d5cf188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Hurt2.mp3 using Guid(de51913b9cc8865438de488c4d5cf188) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd66884c9c814517af42deeb3610a623c') in 0.0119858 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000035 seconds.
+  path: Assets/Prefabs/Tower Prefabs/vine1.fbx
+  artifactKey: Guid(ed383739882524f44b33bd1b7e5da06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower Prefabs/vine1.fbx using Guid(ed383739882524f44b33bd1b7e5da06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a90f263d298c6d8e6d7ff8a86d6ec88') in 0.026123375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Level3SFX/Level3SFX/Roar2.mp3
-  artifactKey: Guid(c620464917c75c04ca39812263dc33ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Roar2.mp3 using Guid(c620464917c75c04ca39812263dc33ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26306a9c7e94e97a215924498602573e') in 0.0127443 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Level3SFX/Level3SFX/Hurt.mp3
-  artifactKey: Guid(16cd237e2bbd56840bb5ef5404b257da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Hurt.mp3 using Guid(16cd237e2bbd56840bb5ef5404b257da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e843fc9ebf81c45f1a0ded8d9da4b377') in 0.0126666 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Level3SFX/Level3SFX/Spell.mp3
-  artifactKey: Guid(c8fc51e091cadb74186192b3b8b024cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Level3SFX/Level3SFX/Spell.mp3 using Guid(c8fc51e091cadb74186192b3b8b024cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fe540aa5b88cdda19844d03a9cc04ac') in 0.013728 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.713 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.684 seconds
-Domain Reload Profiling: 1397ms
-	BeginReloadAssembly (228ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (404ms)
-		LoadAssemblies (350ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (193ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (177ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (684ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (552ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (415ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4076 unused Assets / (4.0 MB). Loaded Objects now: 4620.
-Memory consumption went from 172.0 MB to 167.9 MB.
-Total: 7.161100 ms (FindLiveObjects: 0.523200 ms CreateObjectMapping: 0.590500 ms MarkObjects: 4.127700 ms  DeleteObjects: 1.918500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
