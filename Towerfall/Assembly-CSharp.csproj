@@ -78,8 +78,8 @@
     <Compile Include="Assets\Scripts\Player Scripts\FallingResetScene.cs" />
     <Compile Include="Assets\Scripts\Platform Scripts\TimedPlatformWithRespawn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Mountain Terrain rocks and tree\Script\Camera\FlyCameraControl.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerHealth.cs" />
