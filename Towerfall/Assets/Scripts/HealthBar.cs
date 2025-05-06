@@ -6,8 +6,8 @@ public class HealthBar : MonoBehaviour
     public static HealthBar Instance { get; private set; }
 
     public Image HealthBarFill;
-    public float maxMana = 100f;
-    private float currentMana;
+    public float maxHealth = 100f;
+    private float currentHealth;
     public float testTime = 20.0f;
     
 
@@ -22,41 +22,36 @@ public class HealthBar : MonoBehaviour
     }
     void Start()
     {
-        currentMana = maxMana;
-        Debug.Log(currentMana + " " + maxMana);
+        currentHealth = maxHealth;
+        Debug.Log(currentHealth + " " + maxHealth);
         UpdateHealthBar();
         
     }
     public float ReturnMana()
     {
-        return currentMana;
+        return currentHealth;
     } 
     private void UpdateHealthBar() {
 
-        HealthBarFill.fillAmount = (currentMana / maxMana); 
+        HealthBarFill.fillAmount = (currentHealth / maxHealth); 
         
         
-        Debug.Log("HealthBarFill: " + HealthBarFill.fillAmount + "-- currenet / max -->  "+ currentMana / maxMana);
+        Debug.Log("HealthBarFill: " + HealthBarFill.fillAmount + "-- currenet / max -->  "+ currentHealth / maxHealth);
     }
-    public void UseMana(float amount) { 
-        if (amount > currentMana) {
+    public void TakeDamage(float amount) { 
+        if (amount > currentHealth) {
             Debug.Log("Not enough mana");
         }
-        currentMana -= amount;
+        currentHealth -= amount;
         UpdateHealthBar();
     }
-    public void AddMana(float amount) {
-        currentMana += amount;
-        if (currentMana > maxMana) {
-            currentMana = maxMana;
+    public void HealDamage(float amount) {
+        currentHealth += amount;
+        if (currentHealth > maxHealth) {
+            currentHealth = maxHealth;
         }
         UpdateHealthBar();
     }
     // Update is called once per frame
-    void Update()
-    {   
-        //UseMana(1.0f / testTime * Time.deltaTime);
-        //UseMana(0.001f);
-        
-    }
+    
 }

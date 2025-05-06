@@ -33,7 +33,7 @@ public class ManaBar : MonoBehaviour
     } 
     private void UpdateManaBar() {
 
-        manabarFill.fillAmount = (currentMana / maxMana); 
+        manabarFill.fillAmount = currentMana / maxMana; 
         
         
         Debug.Log("manabarFill: " + manabarFill.fillAmount + "-- currenet / max -->  "+ currentMana / maxMana);
