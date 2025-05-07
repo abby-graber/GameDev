@@ -8,7 +8,7 @@ public class ManaBar : MonoBehaviour
     public Image manabarFill;
     public float maxMana = 100f;
     private float currentMana;
-    public float testTime = 20.0f;
+    public float testTime = 20.0f;  
     
 
     void Awake()
@@ -33,10 +33,10 @@ public class ManaBar : MonoBehaviour
     } 
     private void UpdateManaBar() {
 
+        Debug.Log("manabarFill: " + manabarFill.fillAmount + "-- currenet / max -->  "+ currentMana / maxMana);
         manabarFill.fillAmount = currentMana / maxMana; 
         
         
-        Debug.Log("manabarFill: " + manabarFill.fillAmount + "-- currenet / max -->  "+ currentMana / maxMana);
     }
     public void UseMana(float amount) { 
         if (amount > currentMana) {

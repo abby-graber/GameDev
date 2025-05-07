@@ -3,14 +3,16 @@ using UnityEngine;
 public class SmoothFreeFloatingCharacter : MonoBehaviour
 {
     [Header("Floating Settings")]
-    [SerializeField] private float driftSpeed = 1.0f;
-    [SerializeField] private float rotationSpeed = 10f;
-    [SerializeField] private float maxDriftDistance = 2f;
+    [SerializeField] public float driftSpeed = 1.0f;
+    [SerializeField] public float rotationSpeed = 10f;
+    [SerializeField] public float maxDriftDistance = 2f;
     
     [Header("Noise Settings")]
     [SerializeField] private float noiseFrequency = 0.3f;
     [SerializeField] private float verticalNoiseFrequency = 0.2f;
     [SerializeField] private float verticalAmplitude = 0.5f;
+
+    
     
     private Vector3 startPosition;
     private Vector3 noiseOffset;
@@ -38,17 +40,15 @@ public class SmoothFreeFloatingCharacter : MonoBehaviour
     
     private void Update()
     {
-        // Use Perlin noise to generate smooth, continuous motion
+        
         float time = Time.time * driftSpeed;
         
         // Calculate smooth position offsets using Perlin noise
         float xOffset = Mathf.PerlinNoise(time * noiseFrequency + noiseOffset.x, noiseOffset.y) * 2 - 1;
         float zOffset = Mathf.PerlinNoise(noiseOffset.z, time * noiseFrequency + noiseOffset.x) * 2 - 1;
-        
-        // Use a different frequency for vertical movement
         float yOffset = Mathf.PerlinNoise(time * verticalNoiseFrequency + noiseOffset.y, noiseOffset.z) * 2 - 1;
         
-        // Apply the offsets to position
+        
         Vector3 offset = new Vector3(
             xOffset * maxDriftDistance,
             yOffset * verticalAmplitude,
@@ -57,7 +57,7 @@ public class SmoothFreeFloatingCharacter : MonoBehaviour
         
         transform.position = startPosition + offset;
         
-        // Handle smooth rotation changes
+        
         rotationChangeTimer -= Time.deltaTime;
         if (rotationChangeTimer <= 0)
         {
@@ -65,11 +65,11 @@ public class SmoothFreeFloatingCharacter : MonoBehaviour
             targetRotation = Random.rotation;
             rotationBlend = 0f;
             
-            // Reset timer
+            
             rotationChangeTimer = Random.Range(5f, 10f);
         }
         
-        // Smoothly blend to target rotation
+        
         rotationBlend += Time.deltaTime * rotationSpeed * 0.1f;
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationBlend * Time.deltaTime);
     }
