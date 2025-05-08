@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
 
     public bool isAlive = true;
 
+    public HealthBar healthBar;
+
     void Awake()
     {
         animator = GetComponent<Animator>(); // Ensure this is correctly set up
@@ -20,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar?.TakeDamage(damage);
         //animator.SetTrigger("takeDamage");
         Debug.Log("Player took damage: " + damage);
 

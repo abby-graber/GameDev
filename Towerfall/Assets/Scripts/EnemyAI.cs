@@ -34,6 +34,8 @@ public class EnemyAI : MonoBehaviour
     private PlayAudio playAudio;
     private bool isStarting = true;
 
+    public HealthBar healthBar;
+
     private void Awake()
     {
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -227,6 +229,7 @@ public class EnemyAI : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar?.TakeDamage(damage);
 
         animator.SetBool("isWalking", false);
         animator.SetBool("isRunning", false);

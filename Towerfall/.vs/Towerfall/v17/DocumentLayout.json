@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User123\\GameDev\\Towerfall\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|c:\\users\\user123\\gamedev\\towerfall\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|c:\\users\\user123\\gamedev\\towerfall\\assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -81,23 +85,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayAudio.cs",
-              "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\PlayAudio.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayAudio.cs",
-              "ToolTip": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\PlayAudio.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayAudio.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wA0AAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
+              "ToolTip": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T14:36:50.695Z"
+              "WhenOpened": "2025-05-08T13:35:14.206Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SoundFXManager.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\Sound Manager\\SoundFXManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sound Manager\\SoundFXManager.cs",
@@ -109,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PlayerShooting.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\PlayerShooting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerShooting.cs",
@@ -121,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Projectile.cs",
@@ -133,25 +138,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\Player Scripts\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\PlayerHealth.cs",
               "ToolTip": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\Player Scripts\\PlayerHealth.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\PlayerHealth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T16:27:47.021Z"
+              "WhenOpened": "2025-05-01T16:27:47.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EnemyAI.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\EnemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyAI.cs",
               "ToolTip": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\EnemyAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyAI.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAywLQAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T20:46:25.433Z",
               "EditorCaption": ""
@@ -159,6 +165,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "PlayAudio.cs",
+              "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\PlayAudio.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayAudio.cs",
+              "ToolTip": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\PlayAudio.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayAudio.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:36:50.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\Player Scripts\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\PlayerAttack.cs",
@@ -170,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\Player Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\PlayerController.cs",
@@ -182,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ProjectilePooler.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\ProjectilePooler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ProjectilePooler.cs",
@@ -194,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RestrictCamera.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\RestrictCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RestrictCamera.cs",
@@ -206,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Readme.txt",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\AlchemyLabProps\\Readme.txt",
               "RelativeDocumentMoniker": "Assets\\AlchemyLabProps\\Readme.txt",
@@ -218,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "BossAILevel3.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\BossAILevel3.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BossAILevel3.cs",
@@ -230,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BreakablePlatform.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\BreakablePlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BreakablePlatform.cs",
@@ -242,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttack.cs",
@@ -254,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "TimedPlatform.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\TimedPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimedPlatform.cs",
@@ -266,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "OneWayPlatform.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\OneWayPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OneWayPlatform.cs",
@@ -278,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BossAI.cs",
               "DocumentMoniker": "C:\\Users\\User123\\OneDrive\\Desktop\\Towerfall\\BossAI.cs",
               "RelativeDocumentMoniker": "..\\..\\OneDrive\\Desktop\\Towerfall\\BossAI.cs",
@@ -286,12 +304,11 @@
               "RelativeToolTip": "..\\..\\OneDrive\\Desktop\\Towerfall\\BossAI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T22:58:56.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T22:58:56.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "MovingPlatform.cs",
               "DocumentMoniker": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\MovingPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MovingPlatform.cs",

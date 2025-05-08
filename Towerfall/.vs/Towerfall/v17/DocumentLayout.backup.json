@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|c:\\users\\user123\\gamedev\\towerfall\\assets\\scripts\\playaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|C:\\Users\\User123\\GameDev\\Towerfall\\assets\\scripts\\playaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41043DC7-6EA7-3C14-AB89-BED9107EE957}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -93,8 +93,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayAudio.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA1wA0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T14:36:50.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T14:36:50.695Z"
             },
             {
               "$type": "Document",
@@ -118,8 +117,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerShooting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T21:37:21.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T21:37:21.977Z"
             },
             {
               "$type": "Document",
@@ -131,8 +129,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Projectile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T21:36:09.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T21:36:09.453Z"
             },
             {
               "$type": "Document",
@@ -144,8 +141,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\PlayerHealth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T16:27:47.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T16:27:47.021Z"
             },
             {
               "$type": "Document",
@@ -155,7 +151,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyAI.cs",
               "ToolTip": "C:\\Users\\User123\\GameDev\\Towerfall\\Assets\\Scripts\\EnemyAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyAI.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwLQAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAywLQAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T20:46:25.433Z",
               "EditorCaption": ""
@@ -170,8 +166,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\PlayerAttack.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T14:13:36.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T14:13:36.47Z"
             },
             {
               "$type": "Document",
@@ -231,8 +226,7 @@
               "RelativeToolTip": "Assets\\Scripts\\BossAILevel3.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAmwIQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:07:03.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T15:07:03.762Z"
             },
             {
               "$type": "Document",
