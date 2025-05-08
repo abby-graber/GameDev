@@ -4539,6 +4539,14 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 1773228108273343887, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277b9c1a0eb995e4385866afd1f246c8, type: 3}
+    - target: {fileID: 4379225946637283631, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7bbcda0301d402746bac3b96c1091612, type: 3}
     - target: {fileID: 4417053179600297708, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
       propertyPath: m_SizeDelta.x
       value: 139.31
@@ -4550,6 +4558,22 @@ PrefabInstance:
     - target: {fileID: 4443285494598853382, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713444470566613107, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 29c91f6e361bee744be1f164d8a4c526, type: 3}
+    - target: {fileID: 5899706009464663762, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44604860739ebd249a942290a5bdf053, type: 3}
+    - target: {fileID: 5899706009464663762, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899706009464663762, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6572242935004853538, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4595,9 +4619,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: UiLevel3
       objectReference: {fileID: 0}
+    - target: {fileID: 7631257742798314521, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c6c243f430a3ba4189c405d263f76cb, type: 3}
     - target: {fileID: 7945296219565286435, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
       propertyPath: m_Name
       value: healthbarEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678599344726173124, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853180301371044436, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_text
+      value: 'LM
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853180301371044436, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_fontSize
+      value: 23.1
       objectReference: {fileID: 0}
     - target: {fileID: 9082583348131035202, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4611,6 +4653,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -22.2
       objectReference: {fileID: 0}
+    - target: {fileID: 9112687500963293147, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_text
+      value: Z
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217449351489485088, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f39179a361499424f9243c661ab31e95, type: 3}
     m_RemovedComponents:
     - {fileID: 1821538731488247835, guid: 770280ff4ea2b004d85ec3aa16d30d30, type: 3}
     m_RemovedGameObjects: []
@@ -7948,7 +7998,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 44604860739ebd249a942290a5bdf053, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18516,7 +18566,7 @@ MonoBehaviour:
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
