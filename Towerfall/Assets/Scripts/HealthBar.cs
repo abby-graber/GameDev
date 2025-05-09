@@ -9,17 +9,8 @@ public class HealthBar : MonoBehaviour
     public float maxHealth = 100f;
     private float currentHealth;
     public float testTime = 20.0f;
-    
 
-    void Awake()
-    {
-        if (Instance == null) {
-            Instance = this;
-        } else {
-            Destroy(gameObject);
-        }
-
-    }
+    void Awake() {}
     void Start()
     {
         currentHealth = maxHealth;
