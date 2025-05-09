@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class EnemyAI : MonoBehaviour
 {
@@ -35,6 +37,8 @@ public class EnemyAI : MonoBehaviour
     private bool isStarting = true;
 
     public HealthBar healthBar;
+    [SerializeField] private int transitionSceneIndex = 5; 
+    [SerializeField] private float delayTime = 1f; 
 
     private void Awake()
     {
@@ -100,7 +104,7 @@ public class EnemyAI : MonoBehaviour
             playAudio.PlayRoarTwo();
             hasGoneMad = true;
         }
-
+        
         if (playerHealth != null && !playerHealth.isAlive)
         {
             return;
@@ -252,6 +256,9 @@ public class EnemyAI : MonoBehaviour
             {
                 playerAttack.Victory();
             }
+            
+            StartCoroutine(LoadSceneAfterDelay());
+            
         }
     }
 
@@ -272,5 +279,13 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+    IEnumerator LoadSceneAfterDelay()
+    {
+        // Wait for the specified delay time
+        yield return new WaitForSeconds(delayTime);
+        
+        // Load the transition scene
+        SceneManager.LoadScene(transitionSceneIndex);
     }
 }

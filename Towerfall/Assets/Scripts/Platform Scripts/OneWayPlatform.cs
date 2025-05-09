@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.AI;
-using static UnityEditor.PlayerSettings;
+
 
 public class OneWayPlatform : MonoBehaviour
 {
